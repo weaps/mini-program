@@ -1,0 +1,6 @@
+
+<view class="list-container">
+  <view class="item" wx:for="{{list}}" wx:key="key">
+    <view class="box" bindlongtap="longtapEvent">{{item.name}}</view>
+  </view>
+</view>

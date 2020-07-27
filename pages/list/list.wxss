@@ -1,0 +1,16 @@
+/* pages/list/list.wxss */
+.list-container {
+  width: 100%;
+  font-size: 0;
+}
+.item {
+  display: inline-block;
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.item .box {
+  height: 100px;
+  background: #ddd;
+  font-size: 14rpx;
+}

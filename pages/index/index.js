@@ -16,6 +16,16 @@ Page({
     })
   },
   onLoad: function () {
+    console.log('start')
+    wx.getUserInfo({
+      success: function(res) {
+        // debugger
+        console.log(res)
+      },
+      error: function(err) {
+        console.log(err)
+      }
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -35,6 +45,7 @@ Page({
       wx.getUserInfo({
         success: res => {
           app.globalData.userInfo = res.userInfo
+          console.log(res)
           this.setData({
             userInfo: res.userInfo,
             hasUserInfo: true
